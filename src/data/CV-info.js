@@ -4,10 +4,10 @@ export const CV = {
   header: {
     name: "João Afonso",
     birthDate: "07/07/1996",
-    contact: "joaoafonso386@gmail.com",
+    email: "joaoafonso386@gmail.com",
+    number: "926770541",
     shortBio:
       "Hi! I'm a Front end developer that is passionate about tecnology. Learn with others, help others learn.",
-    picture: "me.jpg",
   },
   about: {
     title: "Who I'm I?",
