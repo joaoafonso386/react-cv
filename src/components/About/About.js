@@ -8,10 +8,10 @@ const About = () => {
   return (
     <div>
       <Container fluid>
-        <Header dividing as="h2">
+        <Header style={{ paddingBottom: "15px" }} dividing as="h2">
           {about.title}
         </Header>
-        <Segment>{about.content}</Segment>
+        <Segment style={{ marginTop: "25px" }}>{about.content}</Segment>
       </Container>
     </div>
   );
