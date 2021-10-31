@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Container, Header, Segment } from "semantic-ui-react";
+import { Header, Segment } from "semantic-ui-react";
 import { ContextCV } from "../../data/CV-info";
 
 const About = () => {
@@ -7,12 +7,14 @@ const About = () => {
 
   return (
     <div>
-      <Container fluid>
-        <Header style={{ paddingBottom: "15px" }} dividing as="h2">
-          {about.title}
-        </Header>
-        <Segment style={{ marginTop: "25px" }}>{about.content}</Segment>
-      </Container>
+      <Header style={{ paddingBottom: "15px" }} dividing as="h2">
+        {about.title}
+      </Header>
+      <Segment
+        style={{ marginTop: "25px", fontSize: "1.2em", lineHeight: "1.5" }}
+      >
+        {about.content}
+      </Segment>
     </div>
   );
 };

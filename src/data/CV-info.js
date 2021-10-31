@@ -6,8 +6,7 @@ export const CV = {
     birthDate: "07/07/1996",
     email: "joaoafonso386@gmail.com",
     number: "926770541",
-    shortBio:
-      "Hi! I'm a Front end developer that is passionate about tecnology. Learn with others, help others learn.",
+    shortBio: "Hi! I'm a Front end developer",
   },
   about: {
     title: "Who I'm I?",
@@ -45,7 +44,7 @@ export const CV = {
       institution: "ULHT - Universidade Lusófona",
       degree: "Bachelors in Marketing and PR",
       description:
-        "First steps as a marketer, helped me choose what I was really interested about",
+        "First steps as a marketer, helped me choose what I was really was interested about",
     },
     {
       institution: "NOVA IMS",
