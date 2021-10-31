@@ -1,3 +1,5 @@
+import { createContext } from "react";
+
 export const CV = {
   header: {
     name: "João Afonso",
@@ -67,3 +69,5 @@ export const CV = {
     },
   ],
 };
+
+export const ContextCV = createContext(CV);

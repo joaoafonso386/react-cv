@@ -1,28 +1,20 @@
-import { Card, Icon, Image } from "semantic-ui-react";
-import { CV } from "../../data/CV-info.js";
+import { useContext } from "react";
+import { Image, Header, Segment } from "semantic-ui-react";
 import me from "../../assets/me.jpg";
+import { ContextCV } from "../../data/CV-info";
 
-const Header = () => {
-  const { header } = CV;
+const HeaderC = () => {
+  const { header } = useContext(ContextCV);
 
   return (
-    <Card style={{ margin: "30px 0", width: "500px" }}>
-      <Image src={me} wrapped ui={false} />
-      <Card.Content>
-        <Card.Header>{header.name}</Card.Header>
-        <Card.Meta>
-          <span className="date">{header.contact}</span>
-        </Card.Meta>
-        <Card.Description>{header.shortBio}</Card.Description>
-      </Card.Content>
-      <Card.Content extra>
-        <a>
-          <Icon name="birthday" />
-          {header.birthDate}
-        </a>
-      </Card.Content>
-    </Card>
+    <div>
+      <Header as="h1" block>
+        {header.name}
+      </Header>
+      <Image style={{ width: "300px" }} circular src={me} wrapped />
+      <Segment>{header.shortBio}</Segment>
+    </div>
   );
 };
 
-export default Header;
+export default HeaderC;

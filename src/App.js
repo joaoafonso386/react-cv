@@ -3,15 +3,18 @@ import About from "./components/About/About";
 import { Container } from "semantic-ui-react";
 
 import "./App.css";
+import { ContextCV, CV } from "./data/CV-info";
 
 function App() {
   return (
-    <div className="App">
-      <Container>
-        <Header />
-        <About />
-      </Container>
-    </div>
+    <ContextCV.Provider value={CV}>
+      <div className="App">
+        <Container>
+          <Header />
+          <About />
+        </Container>
+      </div>
+    </ContextCV.Provider>
   );
 }
 
